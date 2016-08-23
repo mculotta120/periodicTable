@@ -8,7 +8,7 @@
     <link rel="stylesheet" href= "vendors/bootstrap.min.css"/>
     <link rel="stylesheet" href= "/stylesheets/main.css"/>
   </head>
-  <body>
+  <body ng-controller = 'sampleController'>>
     <div id="title">
     <h1>Periodic Table of Elements</h1>
   </div>
@@ -35,10 +35,142 @@
   </tr>
   <!-- <div class="elements" ng-repeat= "element in elements"> -->
   <tr>
-    <td id="nonMetal">H<br>Hydrogen</td>
+    <td>
+      <button type="button" ng-click="callElement(hydrogen)" id="nonMetal">
+      1
+      <h4>H</h4>
+      Hydrogen
+      </button>
+    </td>
     <td colspan="16"></td>
-    <td>He</td>
+    <td>
+      <button type="button" ng-click="callElement(helium)" id="nobleGas">
+      2
+    <h4>He</h4>
+    Helium
+    </button>
+  </td>
   </tr>
+  <tr>
+    <td>
+      <button type="button" ng-click="callElement(lithium)" id="alkaliMetal">
+      3
+      <h4>Li</h4>
+      Lithium
+      </button>
+    </td>
+    <td>
+      <button type="button" ng-click="callElement(beryllium)" id="alkalineEarthMetal">
+      4
+      <h4>Be</h4>
+      Beryllium
+      </button>
+    </td>
+    <td colspan="10"></td>
+    <td>
+      <button type="button" ng-click="callElement(boron)" id="metalloid">
+      5
+      <h4>B</h4>
+      Boron
+      </button>
+    </td>
+    <td>
+      <button type="button" ng-click="callElement(carbon)" id="otherNonMetal">
+      6
+      <h4>C</h4>
+      Carbon
+      </button>
+    </td>
+    <td>
+      <button type="button" ng-click="callElement(nitrogen)" id="otherNonMetal">
+        7
+        <h4>N</h4>
+        Nitrogen
+      </button>
+    </td>
+    <td>
+      <button type="button" ng-click="callElement(oxygen)" id="otherNonMetal">
+      8
+      <h4>O</h4>
+      Oxygen
+      </button>
+    </td>
+    <td>
+      <button type="button" ng-click="callElement(fluorine)" id="halogen">
+      9
+      <h4>F</h4>
+      Fluorine
+      </button>
+    </td>
+    <td>
+      <button type="button" ng-click="callElement(neon)" id="nobleGas">
+      10
+    <h4>Ne</h4>
+    Neon</td>
+    </button>
+  </tr>
+  <tr>
+    <td>
+      <button type="button" ng-click="callElement(sodium)" id="alkaliMetal">
+      11
+      <h4>Na</h4>
+      Sodium
+      </button>
+    </td>
+    <td>
+      <button type="button" ng-click="callElement(magnesium)" id="alkalineEarthMetal">
+      12
+      <h4>Ma</h4>
+      Magnesium
+      </button>
+    </td>
+    <td colspan="10"></td>
+    <td>
+      <button type="button" ng-click="callElement(aluminium)" id="postTransitionMetal">
+      13
+      <h4>Al</h4>
+      Aluminium
+      </button>
+    </td>
+    <td>
+      <button type="button" ng-click="callElement(silicon)" id="metalloid">
+      14
+      <h4>Si</h4>
+      Silicon
+      </button>
+    </td>
+    <td>
+      <button type="button" ng-click="callElement(phosphorous)" id="otherNonMetal">
+      15
+      <h4>P</h4>
+      Phosphorous
+      </button>
+    </td>
+    <td>
+      <button type="button" ng-click="callElement(sulfur)" id="otherNonMetal">
+      16
+      <h4>S</h4>
+      Sulfur
+      </button>
+    </td>
+    <td>
+      <button type="button" ng-click="callElement(chlorine)" id="halogen">
+      17
+      <h4>Cl</h4>
+      Chlorine
+      </button>
+    </td>
+    <td>
+      <button type="button" ng-click="callElement(argon)"  id="nobleGas">
+      18
+    <h4>Ar</h4>
+    Argon</td>
+    </button>
+  </tr>
+
+
+
+
   </div>
 </table>
   </body>

@@ -4,3 +4,33 @@ body{
 #title{
   text-align: center;
 }
+td{
+  border-radius: 3px
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+#nonMetal{
+background-color: #C390D4;
+}
+#nobleGas{
+background-color: #D4A190;
+}
+#alkaliMetal{
+background-color: #A1D490;
+}
+#alkalineEarthMetal{
+background-color: #90C3D4;
+}
+#metalloid{
+background-color: #90D4BC;
+}
+#otherNonMetal{
+background-color: #CAD490;
+}
+#halogen{
+  background-color: #D490A8
+}
+#postTransitionMetal{
+  background-color: #D4BB90;
+}
